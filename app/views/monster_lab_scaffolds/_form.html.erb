@@ -1,0 +1,32 @@
+<%= form_with(model: monster_lab_scaffold) do |form| %>
+  <% if monster_lab_scaffold.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(monster_lab_scaffold.errors.count, "error") %> prohibited this monster_lab_scaffold from being saved:</h2>
+
+      <ul>
+        <% monster_lab_scaffold.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :titlemonster, style: "display: block" %>
+    <%= form.text_field :titlemonster %>
+  </div>
+
+  <div>
+    <%= form.label :imagemonster, style: "display: block" %>
+    <%= form.text_area :imagemonster %>
+  </div>
+
+  <div>
+    <%= form.label :descriptionmonster, style: "display: block" %>
+    <%= form.text_area :descriptionmonster %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @monster_lab_scaffold %>
+
+<div>
+  <%= link_to "Edit this monster lab scaffold", edit_monster_lab_scaffold_path(@monster_lab_scaffold) %> |
+  <%= link_to "Back to monster lab scaffolds", monster_lab_scaffolds_path %>
+
+  <%= button_to "Destroy this monster lab scaffold", @monster_lab_scaffold, method: :delete %>
+</div>

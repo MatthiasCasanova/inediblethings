@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Monster lab scaffolds</h1>
+
+<div id="monster_lab_scaffolds">
+  <% @monster_lab_scaffolds.each do |monster_lab_scaffold| %>
+    <%= render monster_lab_scaffold %>
+    <p>
+      <%= link_to "Show this monster lab scaffold", monster_lab_scaffold %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New monster lab scaffold", new_monster_lab_scaffold_path %>

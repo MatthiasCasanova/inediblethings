@@ -1,0 +1,2 @@
+class MonsterLabScaffold < ApplicationRecord
+end
